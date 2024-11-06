@@ -20,14 +20,14 @@ def fetch_commentary_content(commentary_ref, headers=None):
         response.raise_for_status()
         
         data = response.json()
-        
+        conmentary = {}
         # Extract only text and he fields
         extracted_content = {
             'text': data.get('text', ''),
             'he': data.get('he', '')
         }
-        
-        return extracted_content
+        conmentary[f'{commentary_ref}'] = extracted_content
+        return conmentary
             
     except requests.exceptions.RequestException as e:
         print(f"Error fetching commentary content: {e}")

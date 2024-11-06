@@ -1,4 +1,4 @@
-# Retrieving Buddhist Text Commentaries Using Python: A Step-by-Step Guide
+# Retrieving Buddhist Text Commentaries Using Pecha.org Api: A Step-by-Step Guide
 
 In this tutorial, we'll explore how to use Python to fetch Buddhist text commentaries and their related content using a simple API on [Pecha.org](https://pecha.org/texts). This code is particularly useful for researchers, scholars, and developers working with Buddhist texts and their commentaries that are available on [Pecha.org](https://pecha.org/texts).
 
@@ -75,8 +75,8 @@ root_commentary_dict[root_text_segment_path] = commentaries_list
 The code returns a dictionary with the following structure:
 ```python
 {
-    "The Way of the Boddhisattva.2.1": [
-        {
+    "Root_Text.2.1": [
+        "commentary.2.1.2": {
             "text": "English commentary text...",
             "he": "Tibetan commentary text..."
         },
